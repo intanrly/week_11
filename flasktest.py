@@ -23,7 +23,7 @@ def generate_plot():
 
     return plot_url
 
-@app.route("/")
+@app.route("/plot")
 def plot():
     plot_url = generate_plot()
     return render_template("plot.html", plot_url=plot_url)
